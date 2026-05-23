@@ -1,0 +1,51 @@
+dataset:
+  mode: sample_n_total
+  source_base_dir: .
+  merged_path: NPS_Experiment/data/merged_nps_news_seeds.jsonl
+  sampled_path: NPS_Experiment/data/nps_20_pilot_seeds.jsonl
+  source_files:
+    - NPS_news_corpora_dataset/nps_elections_verified_news_seeds_2024_2026_v2.jsonl
+    - NPS_news_corpora_dataset/nps_immigration_verified_news_seeds_2024_2026.jsonl
+    - NPS_news_corpora_dataset/nps_public_safety_verified_news_seeds_2024_2026.jsonl
+    - NPS_news_corpora_dataset/nps_international_conflict_verified_news_seeds_2024_2026.jsonl
+    - NPS_news_corpora_dataset/nps_institutional_trust_verified_news_seeds_2024_2026.jsonl
+  n_total: 20
+  random_seed: 42
+
+community:
+  agents_per_role: 5
+  topology: polarized_clusters
+  memory_size: 5
+  network_seed: 42
+
+simulation:
+  num_rounds: 10
+  checkpoint_rounds: [1, 3, 5, 8, 10]
+  verifier_intervention_rounds: [3, 6, 9]
+  messages_per_round_per_agent: 1
+  initial_receiver_roles: ["ordinary_observer", "political_commentator"]
+  initial_receivers_per_role: 2
+  max_context_messages: 4
+  max_concurrent_agent_calls: 10
+
+models:
+  mode: mock
+  generation_model: gpt-5-mini-2025-08-07
+  evaluation_model: gpt-5-mini-2025-08-07
+  max_output_tokens:
+    generation: 240
+    evaluation: 2000
+  temperature:
+    partisan_amplifier: 0.9
+    political_commentator: 0.7
+    institutional_verifier: 0.2
+    ordinary_observer: 0.8
+    evaluator: 0.1
+
+outputs:
+  trajectories_dir: NPS_Experiment/outputs/trajectories
+  metrics_dir: NPS_Experiment/outputs/metrics
+  summaries_dir: NPS_Experiment/outputs/summaries
+
+metrics:
+  allow_heuristic_fallback: false
