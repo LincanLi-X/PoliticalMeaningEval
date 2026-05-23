@@ -1,0 +1,38 @@
+[
+  {
+    "example_id": "tiny-true",
+    "veracity": "true",
+    "claim": "Wisconsin is one of the few states that does not allow absentee ballots to be processed before Election Day.",
+    "evidence": [
+      "Wisconsin law prevented election workers from processing absentee ballots before Election Day.",
+      "Many other states allow some absentee ballot processing before Election Day."
+    ],
+    "annotation": [0, 1],
+    "intent_gold": "Wisconsin's absentee ballot rules are more restrictive than those of many other states.",
+    "ruling": "The statement is accurate."
+  },
+  {
+    "example_id": "tiny-half",
+    "veracity": "half-true",
+    "claim": "The oil and gas industry is 35 percent of the Texas economy.",
+    "evidence": [
+      "A Texas official used a 35 percent figure that included direct, indirect, and induced impacts.",
+      "Direct oil and gas output accounted for a much smaller share of state gross product."
+    ],
+    "annotation": [0, 1],
+    "intent_gold": "The oil and gas industry is a dominant direct share of the Texas economy.",
+    "ruling": "The figure has support but omits important measurement context."
+  },
+  {
+    "example_id": "tiny-false",
+    "veracity": "false",
+    "claim": "There is no science that restaurants spread COVID.",
+    "evidence": [
+      "The claim states that science does not connect restaurants to COVID spread.",
+      "CDC and academic studies found restaurant dining associated with higher COVID exposure risk."
+    ],
+    "annotation": [0, 1],
+    "intent_gold": "Restaurant restrictions lack scientific support.",
+    "ruling": "The evidence contradicts the claim."
+  }
+]
