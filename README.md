@@ -57,9 +57,6 @@ PoliticalMeaningEval/
     nps_institutional_trust_verified_news_seeds_2024_2026.jsonl
     nps_international_conflict_verified_news_seeds_2024_2026.jsonl
     nps_public_safety_verified_news_seeds_2024_2026.jsonl
-
-  emnlp2026_20260520.tex
-  reference.bib
 ```
 
 ## Experiments
