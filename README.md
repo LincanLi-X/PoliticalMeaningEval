@@ -15,48 +15,48 @@ The repository is designed for local mock testing, API-based model evaluation, a
 
 ```text
 PoliticalMeaningEval/
-  PPS_Experiment/
-    PPS_Codes_develope.md
-    README.md
-    TRACER/
-      dataset/
-        train.json
-        dev.json
-        test.json
-    configs/
-      pps_mock.json
-      server_example.json
-    prompts/
-      le.txt
-      he.txt
-      ia.txt
-    scripts/
-      run_pps_experiment.py
-      aggregate_results.py
-    src/pps_experiment/
-    tests/
-    outputs/
+├── PPS_Experiment/
+│   ├── PPS_Codes_develope.md
+│   ├── README.md
+│   ├── TRACER/
+│   │   └── dataset/
+│   │       ├── train.json
+│   │       ├── dev.json
+│   │       └── test.json
+│   ├── configs/
+│   │   ├── pps_mock.json
+│   │   └── server_example.json
+│   ├── prompts/
+│   │   ├── le.txt
+│   │   ├── he.txt
+│   │   └── ia.txt
+│   ├── scripts/
+│   │   ├── run_pps_experiment.py
+│   │   └── aggregate_results.py
+│   ├── src/
+│   │   └── pps_experiment/
+│   ├── tests/
+│   └── outputs/
+├── NPS_Experiment/
+│   ├── NPS_Codes_develope.md
+│   ├── README.md
+│   ├── configs/
+│   │   ├── smoke_mock.yaml
+│   │   ├── pilot_20_seeds.yaml
+│   │   ├── pilot_20_elections.yaml
+│   │   └── experiment.yaml
+│   ├── prompts/
+│   ├── src/
+│   ├── data/
+│   └── outputs/
+├── NPS_news_corpora_dataset/
+    ├── nps_elections_verified_news_seeds_2023_2026.jsonl
+    ├── nps_elections_verified_news_seeds_2024_2026_v2.jsonl
+    ├── nps_immigration_verified_news_seeds_2024_2026.jsonl
+    ├── nps_institutional_trust_verified_news_seeds_2024_2026.jsonl
+    ├── nps_international_conflict_verified_news_seeds_2024_2026.jsonl
+    └── nps_public_safety_verified_news_seeds_2024_2026.jsonl
 
-  NPS_Experiment/
-    NPS_Codes_develope.md
-    README.md
-    configs/
-      smoke_mock.yaml
-      pilot_20_seeds.yaml
-      pilot_20_elections.yaml
-      experiment.yaml
-    prompts/
-    src/
-    data/
-    outputs/
-
-  NPS_news_corpora_dataset/
-    nps_elections_verified_news_seeds_2023_2026.jsonl
-    nps_elections_verified_news_seeds_2024_2026_v2.jsonl
-    nps_immigration_verified_news_seeds_2024_2026.jsonl
-    nps_institutional_trust_verified_news_seeds_2024_2026.jsonl
-    nps_international_conflict_verified_news_seeds_2024_2026.jsonl
-    nps_public_safety_verified_news_seeds_2024_2026.jsonl
 ```
 
 ## Experiments
