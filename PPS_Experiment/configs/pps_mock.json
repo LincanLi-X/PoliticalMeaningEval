@@ -1,0 +1,15 @@
+{
+  "dataset_root": "TRACER/dataset",
+  "split": "dev",
+  "output_dir": "outputs/mock_run",
+  "provider": "mock",
+  "model": "mock-pps",
+  "conditions": ["LE", "HE", "IA"],
+  "prompt_dir": "prompts",
+  "annotation_presented_label": 0,
+  "annotation_hidden_label": 1,
+  "batch_size": 4,
+  "max_tokens": 700,
+  "temperature": 0.0,
+  "request_delay_seconds": 0.0
+}
