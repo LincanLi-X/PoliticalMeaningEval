@@ -1,0 +1,24 @@
+You are evaluating a political claim under the Hidden-Evidence condition.
+
+Use the claim, presented evidence, and hidden evidence. Decide whether hidden context changes the political implication of the claim.
+
+Sample id: {{sample_id}}
+Domain: {{domain}}
+
+Claim:
+{{claim}}
+
+Presented evidence:
+{{presented_evidence}}
+
+Hidden evidence:
+{{hidden_evidence}}
+
+Return one JSON object only. Use these exact keys:
+{
+  "literal_support": "supported|partly_supported|unsupported|unclear",
+  "missing_context_risk": "low|medium|high",
+  "inferred_intent": "brief implied conclusion, if recoverable",
+  "final_label": "true|half-true|false",
+  "short_explanation": "one or two sentences"
+}
